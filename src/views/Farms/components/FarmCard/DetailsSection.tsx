@@ -14,6 +14,7 @@ export interface ExpandableSectionProps {
   quoteTokenAdresses?: Address
   quoteTokenSymbol?: string
   tokenAddresses: Address
+  exchange?: string
 }
 
 const Wrapper = styled.div`
@@ -44,9 +45,10 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
   quoteTokenAdresses,
   quoteTokenSymbol,
   tokenAddresses,
+  exchange
 }) => {
   const TranslateString = useI18n()
-  const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses })
+  const liquidityUrlPathParts = getLiquidityUrlPathParts({ quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, exchange })
 
   return (
     <Wrapper>
@@ -56,7 +58,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
           isTokenOnly ?
             `https://tethys.finance/swap?inputCurrency=METIS&outputCurrency=${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
             :
-          `https://tethys.finance/pool/add?${liquidityUrlPathParts}`
+          `${liquidityUrlPathParts}`
         }>
           {lpLabel}
         </StyledLinkExternal>

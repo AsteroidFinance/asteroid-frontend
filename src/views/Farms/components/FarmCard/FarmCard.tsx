@@ -149,6 +149,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
                   tokenAddresses={tokenAddresses}
                   cakePrice={cakePrice}
                   apy={farm.apy}
+                  exchange={farm.risk}
                 />
                 {farmAPY}%
               </>
@@ -183,6 +184,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
           quoteTokenAdresses={quoteTokenAdresses}
           quoteTokenSymbol={quoteTokenSymbol}
           tokenAddresses={tokenAddresses}
+          exchange={farm.risk}
         />
       </ExpandingWrapper>
     </FCard>
