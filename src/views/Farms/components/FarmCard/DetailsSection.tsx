@@ -54,9 +54,9 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
         <Text>{TranslateString(316, 'Stake')}:</Text>
         <StyledLinkExternal href={
           isTokenOnly ?
-            `https://exchange.goosedefi.com/#/swap/${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
+            `https://tethys.finance/swap?inputCurrency=METIS&outputCurrency=${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}`
             :
-          `https://exchange.goosedefi.com/#/add/${liquidityUrlPathParts}`
+          `https://tethys.finance/pool/add?${liquidityUrlPathParts}`
         }>
           {lpLabel}
         </StyledLinkExternal>
@@ -69,7 +69,7 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       )}
       <Flex justifyContent="flex-start">
         <Link external href={bscScanAddress} bold={false}>
-          {TranslateString(356, 'View on BscScan')}
+          View on Metis Explorer
         </Link>
       </Flex>
     </Wrapper>
