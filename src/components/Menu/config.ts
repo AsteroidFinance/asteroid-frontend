@@ -47,7 +47,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Tethys',
-        href: 'https://pancakeswap.info/token/0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6',
+        href: 'https://info.tethys.finance/token/0xa57E401D53bB6bB459247F28b004C800a24A0fF2',
       },
       // {
       //   label: 'CoinGecko',
@@ -59,7 +59,7 @@ const config: MenuEntry[] = [
       // },
       {
         label: 'DexScreener',
-        href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+        href: 'https://dexscreener.com/metis/0xb517d1f93af3a04915b42e02deecf0baef23dfb8',
       },
     ],
   },
@@ -73,7 +73,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
+        href: 'https://docs.asteroidfinance.net',
       },
     ],
   },
