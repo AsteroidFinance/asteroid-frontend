@@ -56,7 +56,7 @@ const Cards = styled(BaseLayout)`
 const Home: React.FC = () => {
   const TranslateString = useI18n()
   const [timeToStart, setTimeToStart] = React.useState("");
-  const startTime = 1640647067002
+  const startTime = 1641337200000
   React.useEffect(() => {
     const interval = setInterval(() => {
       const timeLeft = Math.floor((startTime - Date.now()) / 1000)

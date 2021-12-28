@@ -38,6 +38,7 @@ export interface Address {
   97?: string
   56?: string
   3?: string
+  1088?: string
 }
 
 export interface FarmConfig {

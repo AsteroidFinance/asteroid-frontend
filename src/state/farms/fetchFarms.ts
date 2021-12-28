@@ -92,14 +92,22 @@ const fetchFarms = async () => {
 
         // Amount of token in the LP that are considered staking (i.e amount of token * lp ratio)
         tokenAmount = new BigNumber(tokenBalanceLP).div(new BigNumber(10).pow(tokenDecimals)).times(lpTokenRatio)
+
         const quoteTokenAmount = new BigNumber(quoteTokenBlanceLP)
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
 
+        console.log("token amount before conditional:", tokenAmount.toString())
+
         if(tokenAmount.comparedTo(0) > 0){
           tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount);
+          console.log("quote token amount:", quoteTokenAmount.toString())
+          console.log("token amount:", tokenAmount.toString())
+          console.log("division result:", tokenPriceVsQuote.toString())
         }else{
+          console.log("lp token ratio:", lpTokenRatio.toString())
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
+          console.log("test")
         }
       }
 
