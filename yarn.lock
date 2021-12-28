@@ -3368,10 +3368,10 @@ ast-types-flow@^0.0.7:
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
   integrity sha1-9wtzXGvKGlycItmCw+Oef+ujva0=
 
-asteroidfinance-uikit@^0.10.6:
-  version "0.10.6"
-  resolved "https://registry.yarnpkg.com/asteroidfinance-uikit/-/asteroidfinance-uikit-0.10.6.tgz#b93bda7c67943b8348efd74e51f3f022b86b38fe"
-  integrity sha512-LCjZfJ9MLoP3uql5vdMCLK07CS0YsR0Esbm3afvvNYA6BQ2oOz1OzUFywxWQLqgVj5/InMqO0M6K0Lr3LpldGQ==
+asteroidfinance-uikit@^0.10.7:
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/asteroidfinance-uikit/-/asteroidfinance-uikit-0.10.7.tgz#4665f4b5a868e32279ec4f4035db86b9b0c3f481"
+  integrity sha512-KIEfqH2LZxkHxUfewlXHZML4joA6f1Ou+/hmfy4IZ4LnDDe887y+7Hz+s5RmdHu883NerW73sP43n81BXBrN5A==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
