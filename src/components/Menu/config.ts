@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Buy $ASTEROID',
-        href: 'https://tethys.finance/',
+        href: 'https://tethys.finance/swap?inputCurrency=METIS&outputCurrency=0xa57E401D53bB6bB459247F28b004C800a24A0fF2',
       }
     ],
   },
