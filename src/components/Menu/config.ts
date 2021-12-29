@@ -11,8 +11,12 @@ const config: MenuEntry[] = [
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Buy $ASTEROID',
+        label: 'Buy $AST',
         href: 'https://tethys.finance/swap?inputCurrency=METIS&outputCurrency=0xa57E401D53bB6bB459247F28b004C800a24A0fF2',
+      },
+      {
+        label: 'Add Liquidity',
+        href: 'https://tethys.finance/pool/add?inputCurrency=0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000&outputCurrency=0xa57E401D53bB6bB459247F28b004C800a24A0fF2',
       }
     ],
   },
